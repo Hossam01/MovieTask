@@ -15,6 +15,8 @@ class MainViewModel: ViewModel() {
         Log.d(ContentValues.TAG, "noor init viemodel: ")
         DaggerAppComponent.create().inject(this)
         movieRepository.getFakeMovies()
+        movieRepository.getApiMovies()
+        
     }
 
 }
